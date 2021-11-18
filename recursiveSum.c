@@ -1,18 +1,38 @@
 #include <stdio.h>
 
-int factorial(int n);
+//int factorial(int n);
 
 void main(){
 
 int n;
+printf("enter number: ");
 scanf("%d", &n);
-printf("\n sum = %d \n", factorial(n));
+
+printf("SUMMATION: %d", factorial(n));
 }
 
 int factorial(int n){
-if(n<1){
-return 1;
-} else{
-return (n + factorial(n-1));
+//printf("%d\n", n);
+
+if(n < 0) {
+printf("1\n");
 }
+
+else {
+int sum = 0;
+
+// 0, 1, 2
+for (int i = 0; i <= n; i++){
+//printf("%d\n", i);
+printf("sum: %d + %d\n", sum, i);
+ sum = sum+i;
+}
+
+//printf("sum: %d\n", sum);
+
+printf("n: %d\n", n);
+factorial(n-1);
+return sum;
+}
+
 }
