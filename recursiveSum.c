@@ -5,6 +5,12 @@
 void main(){
 
 int n;
+/*
+int values[5];
+printf("enter value");
+scanf("%d", &values);
+printf("%d", values[0]);
+*/
 printf("enter number: ");
 scanf("%d", &n);
 
